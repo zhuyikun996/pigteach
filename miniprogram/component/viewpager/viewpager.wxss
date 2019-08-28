@@ -1,0 +1,8 @@
+.swiper {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.slideImage {
+  width: 100%;
+}

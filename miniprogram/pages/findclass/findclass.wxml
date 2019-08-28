@@ -1,0 +1,57 @@
+<include src="../../component/viewpager/viewpager.wxml" />
+<!-- 名师推荐 -->
+<view class="recommendteacher">
+    <text class="tip">名师推荐</text>
+    <view class="teacherList" wx:for="{{teacherListArray}}" wx:key="{{index}}" bindtap='goTeacherIntroPage' data-index="{{index}}">
+        <block>
+            <view class='teacherItem'>
+                <view class="teacherImg">
+                    <image class='img_item' src='{{item.img}}'></image>
+                </view>
+                <view class="teacherTitleAndIntro">
+                    <text class='txt_item_title'>{{item.teachertitle}}</text>
+                    <text class='txt_item_author'>名师：{{item.author}}</text>
+                    <text class='txt_item_intro'>{{item.teacherintro}}</text>
+                </view>
+            </view>
+            <!-- <view class='greyLine'></view> -->
+        </block>
+    </view>
+</view>
+<!-- 精选好课 -->
+<view class="selectionclass">
+    <text class="tip">精选好课</text>
+    <view class="classList" wx:for="{{classListArray}}" wx:key="{{index}}" bindtap='goClassPage' data-index="{{index}}">
+        <block>
+            <view class='classItem'>
+                <view class="classTitleView">
+                    <text class="classTag">{{item.classtag}}</text>
+                    <text class="classTitle">{{item.classtitle}}</text>
+                </view>
+                <view class="classPropertyNumberView">
+                    <text class="classPropertyNumber">{{item.classproperty}} / 共 {{item.classnumber}} 门课
+                    </text>
+                </view>
+                <view class="teacherAndPriceView">
+                    <view class="leftView">
+                        <!-- 教师头像和姓名  居左 -->
+                        <view class="teacherPicAndNameView">
+                            <image class="teacherPic" src='{{item.teahcerimg}}' />
+                            <view class="teacherNameView">
+                                <text class="teacherName">{{item.teachername}}</text>
+                            </view>
+                        </view>
+                    </view>
+                    <!-- 课程价格和报名人数 居右 -->
+                    <view class="rightView">
+                        <view class="priceAndStuNumber">
+                            <text class="classPrice">{{item.classprice}}</text>
+                            <text class="stuNumber">已有{{item.stunumber}}人报名</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="greyLine"></view>
+            </view>
+        </block>
+    </view>
+</view>

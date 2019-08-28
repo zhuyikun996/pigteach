@@ -1,0 +1,42 @@
+{
+    "cloud": true,
+    "pages": [
+        "pages/findclass/findclass",
+        "pages/myclass/myclass",
+        "pages/viewpager/viewpager",
+        "pages/adpage/adpage",
+        "pages/index/index",
+        "pages/userConsole/userConsole",
+        "pages/storageConsole/storageConsole",
+        "pages/databaseGuide/databaseGuide",
+        "pages/addFunction/addFunction",
+        "pages/deployFunctions/deployFunctions",
+        "pages/chooseLib/chooseLib"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "比特教育",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#a9b7b7",
+        "selectedColor": "#11cd6e",
+        "borderStyle": "white",
+        "list": [{
+                "selectedIconPath": "images/find_clicked.png",
+                "iconPath": "images/find_grey.png",
+                "pagePath": "pages/findclass/findclass",
+                "text": "发现课程"
+            },
+            {
+                "selectedIconPath": "images/myclass_clicked.png",
+                "iconPath": "images/myclass_grey.png",
+                "pagePath": "pages/myclass/myclass",
+                "text": "我的课程"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

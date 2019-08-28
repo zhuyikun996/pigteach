@@ -1,0 +1,47 @@
+<!--pages/adpage/adpage.wxml-->
+<view class="ad_popError" wx:if="{{popErrorMsg}}">{{popErrorMsg}}</view>
+
+<view>
+  <view class='banner'>
+    <image src="{{src}}" mode='{{mode}}'></image>
+  </view>
+  <view class='getInfoTitle'>
+    <text class='msgGray'>{{msg0}}</text>
+    <text class='msgRed'>{{msg_red}}</text>
+    <text>{{msg2}}</text>
+  </view>
+  <!-- 输入框+立即报名按钮 -->
+  <view class='getInfoInputBox'>
+    <input class='inputInfoChildName' placeholder="{{inputInfoChildName}}" bindinput="inputInfoChildName" confirm-type="done"></input>
+    <input class='inputInfoPhoneNumber' placeholder="{{inputInfoPhoneNumber}}" bindinput="inputInfoPhoneNumber" confirm-type="done"></input>
+    <button class='btnGetClass' bindtap="getClassFunc" hover-class="btnGetClass-hover">{{btnMsgGetClass}}</button>
+  </view>
+  <view class='inforSecurityTips'>
+    <text>{{inforSecurityTips}}</text>
+  </view>
+  <view class='introArea'>
+    <text class='introAreaTitle'>{{introTeacherTitle}}</text>
+    <text class='introAreaContent'>{{introTeacherContent}}</text>
+  </view>
+  <view class='introArea'>
+    <text class='introAreaTitle'>{{introCourseTitle}}</text>
+    <text class='introAreaContent'>{{introCourseContent}}</text>
+  </view>
+
+  <view class='promissInfo'>
+    <text class='promissInfoTitle'>{{promissInfoTitle}}</text>
+    <text class='servicePromissTitle'>{{servicePromissTitle}}</text>
+    <text class='servicePromissContent'>{{servicePromissContent}}</text>
+    <text class='refundPromissTitle'>{{refundPromissTitle}}</text>
+    <text class='refundPromissContent'>{{refundPromissContent}}</text>
+  </view>
+
+  <view class='callMe'>
+    <text class='callThePhone' bindtap='callMe'>{{callThePhone}}</text>
+  </view>
+  <view class='bottom-view'>
+    <button class='btnGetClassBottom' bindtap='backToTop'>{{btnGetClassBottom}}</button>
+    <button class='shareBottom' bindtap='shareToYourFriend' open-type='share'>{{shareToYourFriend}}</button>
+  </view>
+
+</view>
